@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        "allowArbitraryExtensions": true,
+        "allowImportingTsExtensions": true,
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "typeRoots": [ "node_modules/@types" ],
+        "types": [ "bun" ],
+        "newLine": "lf",
+        "noEmit": true,
+        "noEmitHelpers": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "plugins": [],
+        "verbatimModuleSyntax": true,
+        "lib": [ "ES2022" ],
+        "target": "ES2022",
+        "preserveWatchOutput": false,
+        "skipLibCheck": true,
+        "assumeChangesOnlyAffectDirectDependencies": true
+    }
+}
