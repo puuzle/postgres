@@ -62,7 +62,7 @@ const client = new Pool({
     //supports path to Unix socket instead of TCP connection
     hostname: 'localhost',
     port: 5432,
-    connectionTimeout: 60 * 10, //in seconds
+    connectionTimeout: 1000 * 60 * 10, //in ms
     maxConnections: 100 //default when installing postgres
 });
 
