@@ -134,7 +134,7 @@ const client = new Pool<Schema>({
     username: 'postgres',
     password: Pool.NO_PASSWORD.PEER,
     unix: '/run/postgresql/.s.PGSQL.5432',
-    connectionTimeout: 60 * 10, //in seconds
+    connectionTimeout: 1000 * 60 * 10, //in ms
     maxConnections: 100 //default when installing postgres
 });
 
