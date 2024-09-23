@@ -102,7 +102,7 @@ export class Pool<Schema extends EnsureSchema> extends Client {
         const ensurePrepare: PrepareOptions = typeof prepare === 'string' ? { name: prepare } : prepare;
         return {
             query: async (query, values) => {
-                return await this.queryString(query, values, ensurePrepare);
+                return await this.queryString(query, values ?? ensurePrepare.values, ensurePrepare);
             },
             table: (...tables: string[]) => {
                 //NOTE: non-null assertion because type tables requires at least one table,
