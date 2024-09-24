@@ -23,23 +23,6 @@ const pool = new Pool<Schema>({
     connectionTimeout: Number(Bun.env.POSTGRES_CONNECTION_TIMEOUT),
     maxConnections: Number(Bun.env.POSTGRES_MAX_CONNECTIONS)
 });
-/*
-try {
-    const res = await pool.prepare({
-        name: 'prepare',
-        types: [ pool.OID.TEXT ],
-        values: [ '1' ]
-    }).table('test').insert({
-        id: '1'
-    });
-    console.log('awaited prepare');
-    console.log(res);
-    //await pool.disconnectPool();
-} catch (error) {
-    console.log('caught error', error);
-}
-console.log('outer');
-*/
 
 Bun.serve({
     hostname: Bun.env.HOST,
